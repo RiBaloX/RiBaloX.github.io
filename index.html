@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sentir</h1>
+    </header>
+
+    <section class="showcase">
+            <div class="arrow left" onclick="prevImage()">&#10094;</div>
+            <img src="images\S__22478871.jpg" alt="sentir" class="showcase-image" id="showcaseImage">
+            <div class="arrow right" onclick="nextImage()">&#10095; </div>
+        <h2>ของชำร่วยงานมงคล ที่เป็นได้มากกว่าของชำร่วย</h2>
+        <p>ทั้งหมดนี้ “ เพื่อมอบให้เป็นของขวัญ แทนคำขอบคุณ “</p>
+    </section>
+    <script src="app.js"></script> 
+
+    <section class="features">
+        <h2>คุณสมบัติ</h2>
+        <ul>
+            <li>ฉีดได้แบบบ อเนกประสงค์สุดๆ </li>
+            <li>ฉีดตรงไหน หอมฟรุ้งตรงนั้นเลยค่าาา</li>
+            <li>กลิ่นหอมสดชื่น กลิ่นสะอาด แถมไม่ฉุน!! เลิฟสุดๆ </li>
+            <li>ทำให้บรรยากาศสดชื่นนนขึ้นมาก </li>
+        </ul>
+    </section>
+
+    <section class="collection">
+        <h2>COLLECTION</h2>
+        <img src="images\summer.jpg" alt="App Performance" class="collection-image">
+        <img src="images\winter.jpg" alt="Camera Features" class="collection-image">
+        <img src="images\rainy.jpg" alt="App Performance" class="collection-image">
+        <img src="images\spring.jpg" alt="Camera Features" class="collection-image">
+    </section>
+
+    <section class="gallery">
+        <div id="portrait-mode-gallery" class="gallery with-paddlenav" aria-label="แกลเลอรี่โหมดภาพถ่ายบุคคล">
+            
+            <div class="item-container">
+                <div id="portrait-mode-item-1" class="gallery-item current" role="tabpanel" aria-labelledby="portrait-mode-item-1-trigger">
+                    <img src="images/summer.jpg" alt="รูปภาพฤดูร้อน" class="gallery-image">
+                </div>
+                <div id="portrait-mode-item-2" class="gallery-item" role="tabpanel" aria-labelledby="portrait-mode-item-2-trigger">
+                    <img src="images/winter.jpg" alt="รูปภาพฤดูหนาว" class="gallery-image">
+                </div>
+                <div id="portrait-mode-item-3" class="gallery-item" role="tabpanel" aria-labelledby="portrait-mode-item-3-trigger">
+                    <img src="images/rainy.jpg" alt="รูปภาพฤดูฝน" class="gallery-image">
+                </div>
+                <div id="portrait-mode-item-4" class="gallery-item" role="tabpanel" aria-labelledby="portrait-mode-item-4-trigger">
+                    <img src="images/spring.jpg" alt="รูปภาพฤดูใบไม้ผลิ" class="gallery-image">
+                </div>
+            </div>
+            <div class="nav-controls left">
+                <div class="tablist-wrapper">
+                    <div class="dotnav">
+                        <ul role="tablist" class="dotnav-items">
+                            <li role="presentation"><a href="#portrait-mode-item-1" id="portrait-mode-item-1-trigger" class="dotnav-item" role="tab" aria-controls="portrait-mode-item-1" tabindex="0" aria-selected="true"><span class="visuallyhidden"> </span></a></li>
+                            <li role="presentation"><a href="#portrait-mode-item-2" id="portrait-mode-item-2-trigger" class="dotnav-item" role="tab" aria-controls="portrait-mode-item-2" tabindex="-1" aria-selected="false"><span class="visuallyhidden"> </span></a></li>
+                            <li role="presentation"><a href="#portrait-mode-item-3" id="portrait-mode-item-3-trigger" class="dotnav-item" role="tab" aria-controls="portrait-mode-item-3" tabindex="-1" aria-selected="false"><span class="visuallyhidden"> </span></a></li>
+                            <li role="presentation"><a href="#portrait-mode-item-4" id="portrait-mode-item-4-trigger" class="dotnav-item" role="tab" aria-controls="portrait-mode-item-4" tabindex="-1" aria-selected="false"><span class="visuallyhidden"> </span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="gallery.js"></script> 
+    </section>
+
+
+    <section class="specifications">
+        <h2>กลิ่นที่ใช่สำหรับคุณ</h2>
+        <div class="table">
+            
+            <div class="header">summer
+                <div><img src="images\summer.jpg" alt="Summer" class="specifications-image"></div>
+                <div class="data">200 ml</div>
+                <div class="data">159 บาท</div>
+                <div class="data">✅ ใช้กับเสื้อผ้า</div>
+                <div class="data">✅ ดับกลิ่นรองเท้า</div>
+            </div>
+            <div class="header">winter
+                <div><img src="images\winter.jpg" alt="Summer" class="specifications-image"></div>
+                <div class="data">200 ml</div>
+                <div class="data">159 บาท</div>
+                <div class="data">-</div>
+                <div class="data">✅ ดับกลิ่นรองเท้า</div>
+            </div>
+            <div class="header">rainy
+                <div><img src="images\rainy.jpg" alt="Summer" class="specifications-image"></div>
+                <div class="data">200 ml</div>
+                <div class="data">159 บาท</div>
+                <div class="data">-</div>
+                <div class="data">-</div>
+            </div>
+            <div class="header">spring
+                <div><img src="images\spring.jpg" alt="Summer" class="specifications-image"></div>
+                <div class="data">200 ml</div>
+                <div class="data">159 บาท</div>
+                <div class="data">-</div>
+                <div class="data">✅ ดับกลิ่นรองเท้า</div>
+            </div>
+    
+        </div>
+    </section>
+
+    <section class="promotion">
+        <img src="images\promotion.jpg" alt="sentir" class="promotion-image">
+        <h2>กลัวหอมไม่สะใจ ที่บ้านต้องมีทุกจุด..!!</h2>
+        <p>เราเลยจัดโปรโมชั่นสำหรับตัวแม่สายเหมา วางไว้ทุกมุมของบ้านกันไปเล๊ยยยยย</p>
+        <p>✅ วางไว้ชั้นรองเท้า ก่อนใส่รองเท้าผ้าใบ ฉีดดับกลิ่น กันรองเท้าเหม็นอับตอนถอด 😍</p>
+        <p>✅ วางไว้ที่จอดรถ เอาไว้ฉีดดับกลิ่นอับภายในรถยนต์</p>
+        <p>✅ วางไว้บนตู้เสื้ิอผ้า ฉีดดับกลิ่นตู้ / ก่อนนำเสื้อผ้าเข้าตู้ ฉีดสเปรย์เพิ่มความหอม ป้องกันกลิ่นอับ!!</p>
+        <p>✅ วางไว้ในห้อง เอาไว้ฉีดผ้าม่าน ผ้าปู หมอน ผ้าห่ม หอมมมมฟุ้งทั่วห้อง ลดกลิ่นอับของห้องงง</p>
+    </section>
+
+    <section class="contact">
+        <img src="images\QR_code_for_mobile_English_Wikipedia.svg" alt="sentir" class="contact-image">
+        <h2>ติดต่อสั่งซื้อผ่านช่องทาง....</h2>
+        <p>Line: @Sentir.official</p>
+        <p>facebook: สเปรย์น้ำหอมฉีดผ้า Sentir</p>
+        <p>Tel: 012-223-3355</p>
+        <p>Shoppee: Sentir.official</p>
+        <p>Lazada: Sentir.official</p>
+    </section>
+
+    
+
+    <footer>
+        <p>© 2024 Sentir Perfume Product. All rights reserved.</p>
+    </footer>
+</body>
+</html>
