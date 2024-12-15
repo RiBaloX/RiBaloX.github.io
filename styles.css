@@ -290,7 +290,8 @@ footer {
     }
 
     .present-container {
-        flex-direction: column; /* จัดเรียงในแนวตั้ง */
+        /* flex-direction: column;  */
+        flex-direction: column-reverse;
     }
 
     .present-image {
