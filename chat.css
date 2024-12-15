@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    border-radius: 5px;
+    display: none;
+    
+}
+
+.chat-container-inbox {
+    text-align: center;
+}
+
+.chat-sub-btn{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.315);
+    padding-top: 20px;
+    padding-bottom: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fffffff8; 
+}
+.chat-head-btn {
+    background-color: #01b901; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+
+
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.chat-btn {
+    background-color: #00c300; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c38f00;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.chat-toggle:hover {
+    background-color: rgb(168, 126, 0); /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+}
+.chat-toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 207, 63, 0.3); /* สีขาวโปร่งใส */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1); /* เริ่มต้นที่ขนาด 0 */
+    transition: transform 0.3s; /* เพิ่มการเปลี่ยนแปลงขนาด */
+    z-index: -1; /* วงกลมอยู่ด้านหลังปุ่ม */
+}
+
+.chat-toggle:hover::after {
+    background-color: rgba(255, 255, 255, 0); /* สีขาวโปร่งใส */
+    transform: translate(-50%, -50%) scale(1.5); /* ขยายวงกลมเมื่อ hover */
+}
+
+
+.popup{
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    z-index: 1000;
+
+    transform: translate(-50%, -50%); /* Center the popup */
+    transition: opacity 0.5s ease; /* เพิ่มการเปลี่ยนแปลง */
+    
+}
+
+.overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.close-btn {
+    position: absolute; /* ใช้ตำแหน่ง absolute */
+    top: 10px; /* ระยะห่างจากด้านบน */
+    right: 10px; /* ระยะห่างจากด้านขวา */
+    background: none; /* ไม่มีพื้นหลัง */
+    border: none; /* ไม่มีกรอบ */
+    font-size: 20px; /* ขนาดตัวอักษร */
+    color: #000; /* สีตัวอักษร */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือ */
+}
