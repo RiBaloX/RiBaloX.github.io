@@ -140,13 +140,19 @@ p {
 }
 
 .present-container {
-    /* padding: 20px; */
     text-align: center;
     display: flex;
     max-width: 600px;
     align-items: center; 
     margin: auto; 
-    /* border: 1px solid #ccc;  */
+} 
+
+.present-container-reverse {
+    text-align: center;
+    display: flex;
+    max-width: 600px;
+    align-items: center; 
+    margin: auto; 
 } 
 
 .present-image {
@@ -290,7 +296,9 @@ footer {
     }
 
     .present-container {
-        /* flex-direction: column;  */
+        flex-direction: column; 
+    }
+    .present-container-reverse {
         flex-direction: column-reverse;
     }
 
