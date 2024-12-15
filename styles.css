@@ -240,6 +240,7 @@ p {
     padding: 20px;
     text-align: center;
     background-color: rgba(243, 240, 240, 0.479); /* เปลี่ยนสีพื้นหลังที่นี่ */
+    
 }
 
 .specifications-image {
@@ -250,25 +251,29 @@ p {
 }
 
 .specifications h2 {
-    font-size: 2em; /* Responsive font size */
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2em; 
+    margin-bottom: 20px; 
 }
 
 .table {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-    gap: 10px; /* Space between grid items */
-    margin: 0 auto; /* Center the grid */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    margin: 0 auto; 
 }
 .header {
     font-weight: bold;
-    background-color: #f8f8f8; /* Light background for headers */
-    padding: 12px; /* Padding for headers */
+    background-color: #f8f8f8; 
+    padding: 12px; 
 }
 
 .data {
-    background-color: #fff; /* White background for data cells */
-    padding: 12px; /* Padding for data cells */
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    /* margin-left: 60px;
+    margin-right: 60px; */
+    border-radius: 50px;
 }
 
 
