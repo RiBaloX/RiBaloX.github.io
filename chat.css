@@ -63,24 +63,113 @@ body {
     transform: translate(-50%, -50%) scale(1.4); /* ขยายวงกลมเมื่อ hover */
 }
 
-
-
-
 .logo {
     width: 30px;
     height: 30px;
 }
-
-.chat-btn {
-    background-color: #00c300; 
-    color: white; 
-    padding: 10px; 
-    border: none; 
-    border-radius: 5px;
-    margin-bottom: 20px;
+button{
+    padding: 10px 10px;
+    font-size: 1rem;
     cursor: pointer;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    /* margin: 10px; */
+    transition: all 0.25s ease;
 }
 
+.btn-tel {
+    color: #fff; 
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px -0px 0px 0px rgba(248, 76, 64, 0.5)
+    , 0px 0px 0px 0px rgba(255, 187, 39, 0.5);
+}
+.btn-tel:hover {
+    transform: translate(0, -2px);
+    box-shadow: 2px -2px 25px 0px rgba(248, 76, 64, 0.5)
+    , -2px 2px 25px 0px rgba(255, 187, 39, 0.5);
+}
+
+.btn-tel:hover::after {
+    transform: rotate(150deg);
+}
+
+.btn-tel::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #ffae00;
+    background-image: linear-gradient(225deg, #d86827 0%, #f8c726 50%, #d03925 100%);
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+.btn-line {
+    margin: 10px;
+    color: #fff; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px -0px 0px 0px rgba(85, 248, 64, 0.5)
+    , 0px 0px 0px 0px rgba(39, 255, 226, 0.5);
+}
+.btn-line:hover {
+    transform: translate(0, -2px);
+    box-shadow: 2px -2px 25px 0px rgba(85, 248, 64, 0.5)
+    , -2px 2px 25px 0px rgba(39, 255, 226, 0.5);
+}
+
+.btn-line:hover::after {
+    transform: rotate(150deg);
+}
+
+.btn-line::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #00c300;
+    background-image: linear-gradient(225deg, #27d880 0%, #62f826 50%, #07c300 100%);
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+.btn-facebook {
+    margin: 10px;
+    color: #fff; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px -0px 0px 0px rgba(64, 92, 248, 0.5)
+    , 0px 0px 0px 0px rgba(39, 187, 255, 0.5);
+}
+.btn-facebook:hover {
+    transform: translate(0, -2px);
+    box-shadow: 2px -2px 25px 0px rgba(64, 92, 248, 0.5)
+    , -2px 2px 25px 0px rgba(39, 187, 255, 0.5);
+}
+
+.btn-facebook:hover::after {
+    transform: rotate(150deg);
+}
+
+.btn-facebook::after {
+    content: "";
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #007bff;
+    background-image: linear-gradient(225deg, #3327d8 0%, #2688f8 50%, #2400c3 100%);
+    z-index: -1;
+    transition: all 0.25s ease;
+}
 
 .chat-toggle {
     background-color: #c38f00;
